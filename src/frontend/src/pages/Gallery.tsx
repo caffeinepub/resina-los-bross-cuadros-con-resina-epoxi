@@ -6,7 +6,9 @@ import GallerySection from "../components/GallerySection";
 import GastronomicSection from "../components/GastronomicSection";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
+import ProcessSection from "../components/ProcessSection";
 import ProductsSection from "../components/ProductsSection";
+import WhatsAppFloat from "../components/WhatsAppFloat";
 import { useGetAllResinArtPieces } from "../hooks/useQueries";
 
 export default function Gallery() {
@@ -31,10 +33,12 @@ export default function Gallery() {
         <GallerySection artPieces={allPieces} />
         <ProductsSection />
         <GastronomicSection />
+        <ProcessSection />
         <AboutSection />
         <ContactSection />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }

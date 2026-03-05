@@ -12,155 +12,59 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-[92vh] flex items-center justify-center overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(135deg, #1a0f00 0%, #2d1a00 25%, #3d2500 50%, #4a2e08 70%, #2d1a00 100%)",
-      }}
+      className="relative min-h-[94vh] flex items-center justify-center overflow-hidden"
     >
-      {/* Background texture overlay */}
+      {/* Full-bleed background image */}
+      <img
+        src="/assets/generated/hero-mesa-resina-rio-premium-v2.dim_1600x900.jpg"
+        alt="Mesa de resina epoxi premium artesanal"
+        fetchPriority="high"
+        decoding="sync"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      {/* Layered dark overlay — deeper at top and bottom, lighter in center */}
       <div
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c8922a' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.55) 75%, rgba(10,6,2,0.95) 100%)",
         }}
       />
 
-      {/* Resin-like glow blobs */}
+      {/* Amber warm glow accents */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
-          className="absolute top-1/4 -right-32 w-96 h-96 rounded-full blur-3xl opacity-30"
+          className="absolute top-1/3 right-1/4 w-[500px] h-[500px] rounded-full blur-[120px] opacity-15"
           style={{
-            background: "radial-gradient(circle, #c8922a, transparent)",
+            background: "radial-gradient(circle, #d4a030, transparent 70%)",
           }}
         />
         <div
-          className="absolute bottom-1/4 -left-32 w-96 h-96 rounded-full blur-3xl opacity-20"
+          className="absolute bottom-1/3 left-1/4 w-[400px] h-[400px] rounded-full blur-[100px] opacity-10"
           style={{
-            background: "radial-gradient(circle, #e8b84b, transparent)",
-          }}
-        />
-        <div
-          className="absolute top-3/4 right-1/4 w-64 h-64 rounded-full blur-2xl opacity-15"
-          style={{
-            background: "radial-gradient(circle, #7fb069, transparent)",
+            background: "radial-gradient(circle, #e8b84b, transparent 70%)",
           }}
         />
       </div>
 
-      {/* Floating resin drops decoration */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div
-          className="absolute rounded-full opacity-20"
-          style={{
-            width: "12px",
-            height: "12px",
-            background: "rgba(200,146,42,0.6)",
-            left: "10%",
-            top: "15%",
-            filter: "blur(1px)",
-            boxShadow: "inset 0 2px 6px rgba(255,255,255,0.3)",
-          }}
-        />
-        <div
-          className="absolute rounded-full opacity-20"
-          style={{
-            width: "20px",
-            height: "20px",
-            background: "rgba(100,180,120,0.5)",
-            left: "22%",
-            top: "33%",
-            filter: "blur(1px)",
-            boxShadow: "inset 0 2px 6px rgba(255,255,255,0.3)",
-          }}
-        />
-        <div
-          className="absolute rounded-full opacity-20"
-          style={{
-            width: "28px",
-            height: "28px",
-            background: "rgba(232,184,75,0.5)",
-            left: "34%",
-            top: "51%",
-            filter: "blur(1px)",
-            boxShadow: "inset 0 2px 6px rgba(255,255,255,0.3)",
-          }}
-        />
-        <div
-          className="absolute rounded-full opacity-20"
-          style={{
-            width: "36px",
-            height: "36px",
-            background: "rgba(200,146,42,0.6)",
-            left: "46%",
-            top: "15%",
-            filter: "blur(1px)",
-            boxShadow: "inset 0 2px 6px rgba(255,255,255,0.3)",
-          }}
-        />
-        <div
-          className="absolute rounded-full opacity-20"
-          style={{
-            width: "44px",
-            height: "44px",
-            background: "rgba(100,180,120,0.5)",
-            left: "58%",
-            top: "33%",
-            filter: "blur(1px)",
-            boxShadow: "inset 0 2px 6px rgba(255,255,255,0.3)",
-          }}
-        />
-        <div
-          className="absolute rounded-full opacity-20"
-          style={{
-            width: "52px",
-            height: "52px",
-            background: "rgba(232,184,75,0.5)",
-            left: "70%",
-            top: "51%",
-            filter: "blur(1px)",
-            boxShadow: "inset 0 2px 6px rgba(255,255,255,0.3)",
-          }}
-        />
-        <div
-          className="absolute rounded-full opacity-20"
-          style={{
-            width: "60px",
-            height: "60px",
-            background: "rgba(200,146,42,0.6)",
-            left: "82%",
-            top: "15%",
-            filter: "blur(1px)",
-            boxShadow: "inset 0 2px 6px rgba(255,255,255,0.3)",
-          }}
-        />
-        <div
-          className="absolute rounded-full opacity-20"
-          style={{
-            width: "68px",
-            height: "68px",
-            background: "rgba(100,180,120,0.5)",
-            left: "18%",
-            top: "69%",
-            filter: "blur(1px)",
-            boxShadow: "inset 0 2px 6px rgba(255,255,255,0.3)",
-          }}
-        />
-      </div>
-
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-4 py-24 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           {/* Badge */}
           <div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-8"
+            className="inline-flex items-center gap-2 px-5 py-2 rounded-full border mb-8"
             style={{
-              background: "rgba(200,146,42,0.15)",
-              borderColor: "rgba(200,146,42,0.4)",
+              background: "rgba(200,146,42,0.12)",
+              borderColor: "rgba(200,146,42,0.45)",
+              backdropFilter: "blur(6px)",
             }}
           >
             <Sparkles className="h-4 w-4" style={{ color: "#e8b84b" }} />
-            <span className="text-sm font-medium" style={{ color: "#e8b84b" }}>
-              Especialistas en Resina Epoxi · Córdoba, Argentina
+            <span
+              className="text-sm font-semibold tracking-wide"
+              style={{ color: "#e8c96a" }}
+            >
+              Producción 100% Artesanal · Córdoba, Argentina
             </span>
           </div>
 
@@ -169,34 +73,31 @@ export default function HeroSection() {
             className="text-6xl md:text-8xl font-bold mb-6 leading-tight tracking-tight"
             style={{
               background:
-                "linear-gradient(135deg, #e8b84b 0%, #f5d07a 30%, #c8922a 60%, #e8b84b 100%)",
+                "linear-gradient(135deg, #e8b84b 0%, #f7e08a 35%, #d4902a 65%, #e8b84b 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
-              textShadow: "none",
+              filter: "drop-shadow(0 0 30px rgba(200,146,42,0.35))",
             }}
           >
             Resina Los Bross
           </h1>
 
-          {/* Subtitle */}
+          {/* Subtitle — fully legible */}
           <p
             className="text-xl md:text-2xl mb-4 max-w-3xl mx-auto leading-relaxed font-light"
-            style={{ color: "rgba(240,220,180,0.85)" }}
+            style={{ color: "rgba(255,240,210,0.95)" }}
           >
             Mesas a medida, mesas ratonas y cuadros decorativos únicos
             encapsulados en resina epoxi cristal.
           </p>
           <p
-            className="text-base md:text-lg mb-10 max-w-2xl mx-auto"
-            style={{ color: "rgba(200,180,140,0.7)" }}
+            className="text-base md:text-lg mb-12 max-w-2xl mx-auto leading-relaxed"
+            style={{ color: "rgba(230,210,170,0.85)" }}
           >
             Cada pieza hecha a mano con materiales de calidad y acabado
             artesanal profesional.{" "}
-            <span
-              className="font-medium"
-              style={{ color: "rgba(232,184,75,0.9)" }}
-            >
+            <span className="font-semibold" style={{ color: "#e8b84b" }}>
               Distribuimos a todo el país.
             </span>
           </p>
@@ -206,11 +107,13 @@ export default function HeroSection() {
             <Button
               size="lg"
               onClick={scrollToGallery}
-              className="text-lg px-8 py-6 font-semibold shadow-lg"
+              className="text-lg px-9 py-6 font-bold shadow-2xl hover:scale-105 transition-transform duration-200"
               style={{
                 background: "linear-gradient(135deg, #c8922a, #e8b84b)",
                 color: "#1a0f00",
                 border: "none",
+                boxShadow:
+                  "0 0 30px rgba(200,146,42,0.5), 0 4px 20px rgba(0,0,0,0.5)",
               }}
               data-ocid="hero.gallery.button"
             >
@@ -222,27 +125,39 @@ export default function HeroSection() {
                 const element = document.getElementById("contact");
                 if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
-              className="text-lg px-8 py-6 font-semibold"
+              className="text-lg px-9 py-6 font-semibold hover:bg-amber-900/20 transition-all duration-200"
               style={{
-                background: "transparent",
-                color: "#e8b84b",
-                border: "1.5px solid rgba(200,146,42,0.6)",
+                background: "rgba(200,146,42,0.08)",
+                color: "#f0d070",
+                border: "1.5px solid rgba(200,146,42,0.55)",
               }}
               data-ocid="hero.contact.button"
             >
               <MessageCircle className="h-5 w-5 mr-2" />
-              Contactar
+              Consultar
             </Button>
+          </div>
+
+          {/* Scroll indicator */}
+          <div className="mt-16 flex flex-col items-center gap-2 opacity-40">
+            <div
+              className="w-px h-10 animate-pulse"
+              style={{
+                background: "linear-gradient(to bottom, transparent, #e8b84b)",
+              }}
+            />
+            <span className="text-xs font-medium" style={{ color: "#e8b84b" }}>
+              Deslizá para ver
+            </span>
           </div>
         </div>
       </div>
 
-      {/* Bottom fade */}
+      {/* Bottom fade to dark */}
       <div
-        className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
+        className="absolute bottom-0 left-0 right-0 h-40 pointer-events-none"
         style={{
-          background:
-            "linear-gradient(to bottom, transparent, oklch(0.98 0.005 60))",
+          background: "linear-gradient(to bottom, transparent, #0f0a04)",
         }}
       />
     </section>
