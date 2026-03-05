@@ -62,7 +62,7 @@ export default function ProductsSection() {
       title: "Cuadro Blue Label — 45×60 cm",
       price: "Desde $125.000",
       description:
-        "Cuadro decorativo exclusivo 45×60 cm con fragmentos de botella de whisky Blue Label rota, artísticamente encapsulados en resina epoxi negra con relieve 3D. Marco negro elegante.",
+        "Cuadro decorativo exclusivo 45×60 cm con fragmentos de botella de whisky Blue Label rota, artísticamente encapsulados en resina epoxi con acabado brillante y relieve 3D. Marco negro elegante.",
       features: [
         "Medidas: 45 cm × 60 cm",
         "Marco negro elegante",
@@ -78,7 +78,7 @@ export default function ProductsSection() {
       title: "Cuadro Black Label — 45×60 cm",
       price: "Desde $125.000",
       description:
-        "Cuadro decorativo 45×60 cm con fragmentos de botella de whisky Black Label rota, sellados con resina epoxi cristal de 2 mm. Acabado premium con marco negro.",
+        "Cuadro decorativo 45×60 cm con fragmentos de botella de whisky Black Label rota, sellados con resina epoxi cristal de acabado brillante. Pieza premium con marco negro.",
       features: [
         "Medidas: 45 cm × 60 cm",
         "Marco negro premium",

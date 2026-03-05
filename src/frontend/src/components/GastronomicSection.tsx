@@ -23,11 +23,11 @@ const tables: TableProduct[] = [
     image: "/assets/generated/mesa-gastro-marina-nueva.dim_1200x800.jpg",
     shape: "Ovalada",
     dimensions: "120 cm x 80 cm",
-    thickness: "5 cm de espesor total (resina 2 mm)",
+    thickness: "Superficie sellada con resina epoxi brillante",
     weight: "Aprox. 35 kg",
     capacity: "4 personas",
     features: [
-      "Resina epoxi cristal de 2 mm de acabado",
+      "Acabado brillante con resina epoxi cristal",
       "Conchas, ostras y pinzas de cangrejo encapsuladas",
       "Base de madera maciza con patas negras",
       "Superficie 100% impermeable",
@@ -44,7 +44,7 @@ const tables: TableProduct[] = [
       "/assets/generated/mesa-gastro-restaurante-elegante-realista.dim_1200x800.jpg",
     shape: "Rectangular",
     dimensions: "100 cm x 70 cm — personalizable",
-    thickness: "Resina epoxi sellada 2 mm + base de madera",
+    thickness: "Resina epoxi sellada + base de madera maciza",
     weight: "Aprox. 30 kg",
     capacity: "2–4 personas",
     features: [
@@ -65,7 +65,7 @@ const tables: TableProduct[] = [
       "/assets/generated/mesa-gastronomica-mariscos-premium.dim_1200x800.jpg",
     shape: "Ovalada",
     dimensions: "110 cm x 75 cm — personalizable",
-    thickness: "Resina de 2 mm + base de madera",
+    thickness: "Acabado en resina epoxi + base de madera",
     weight: "Aprox. 28 kg",
     capacity: "2–4 personas / decorativa",
     features: [
@@ -86,7 +86,7 @@ const tables: TableProduct[] = [
       "/assets/generated/mesa-rectangular-restaurante-resina-sellada.dim_1200x800.jpg",
     shape: "Rectangular",
     dimensions: "120 cm x 60 cm — hasta 120 cm x 80 cm",
-    thickness: "Capa de resina uniforme sellada (sin espesor exagerado)",
+    thickness: "Capa de resina uniforme sellada sobre toda la superficie",
     weight: "Aprox. 40 kg",
     capacity: "4–6 personas",
     features: [
@@ -107,7 +107,7 @@ const tables: TableProduct[] = [
       "/assets/generated/mesa-gastronomica-marina-conchas.dim_1200x800.jpg",
     shape: "Rectangular",
     dimensions: "120 cm x 80 cm (personalizable hasta 120 cm x 100 cm)",
-    thickness: "Toda la tabla sellada con resina epoxi (3–4 cm de profundidad)",
+    thickness: "Toda la tabla sellada con resina epoxi brillante",
     weight: "Aprox. 45 kg",
     capacity: "4 personas",
     features: [
@@ -184,15 +184,16 @@ export default function GastronomicSection() {
               backgroundClip: "text",
             }}
           >
-            Mesas para Restaurantes
+            Mesas para tu Local
           </h2>
           <p
             className="text-lg max-w-2xl mx-auto"
             style={{ color: "rgba(220,190,140,0.72)" }}
           >
-            Mesas a medida para locales gastronómicos de mariscos. Superficies
-            de resina epoxi con conchas, ostras, pinzas de cangrejo y elementos
-            del mar encapsulados — cada mesa es una obra única.
+            Diseñamos mesas únicas a medida para locales gastronómicos de todo
+            tipo — restaurantes, bares, cafeterías, parrillas y más. Contanos tu
+            idea y encontramos juntos el diseño que mejor se adapte a tu
+            espacio.
           </p>
         </div>
 
@@ -362,8 +363,9 @@ export default function GastronomicSection() {
             className="mb-6 max-w-xl mx-auto"
             style={{ color: "rgba(210,180,130,0.80)" }}
           >
-            Diseñamos mesas a medida con los elementos marinos que elijas.
-            Consultanos por dimensiones, cantidad y diseño personalizado.
+            Contanos qué tipo de local tenés y qué estilo te imaginás. Juntos
+            diseñamos la mesa perfecta para tu espacio — a medida, con el
+            acabado y los elementos que mejor le queden.
           </p>
           <Button
             asChild
@@ -376,7 +378,7 @@ export default function GastronomicSection() {
             data-ocid="gastro.cta.button"
           >
             <a
-              href="https://wa.me/542974189779?text=Hola!%20Quiero%20consultar%20sobre%20mesas%20para%20mi%20restaurante%20de%20mariscos."
+              href="https://wa.me/542974189779?text=Hola!%20Tengo%20un%20local%20gastron%C3%B3mico%20y%20quiero%20consultar%20sobre%20mesas%20a%20medida%20con%20resina%20epoxi."
               target="_blank"
               rel="noopener noreferrer"
             >
