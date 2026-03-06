@@ -23,8 +23,8 @@ export default function GallerySection({ artPieces }: GallerySectionProps) {
             Galería de Arte en Resina
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explora nuestra colección completa de obras de arte realistas
-            encapsuladas en resina epoxi de 2mm
+            Explora nuestra colección completa de obras y piezas decorativas con
+            acabado brillante en resina epoxi
           </p>
         </div>
 

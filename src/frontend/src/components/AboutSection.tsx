@@ -10,9 +10,9 @@ export default function AboutSection() {
     },
     {
       icon: Award,
-      title: "Resina cristal 2 mm",
+      title: "Acabado cristal brillante",
       description:
-        "Acabado espejo ultra brillante con resina epoxi de alta calidad en cada trabajo.",
+        "Acabado espejo ultra brillante con resina epoxi de alta calidad, aplicada artesanalmente en cada trabajo.",
     },
     {
       icon: MapPin,
@@ -126,13 +126,13 @@ export default function AboutSection() {
             >
               Empecé este emprendimiento con la convicción de que el trabajo
               artesanal bien hecho habla por sí solo. Cada pieza que sale de mi
-              taller lleva resina epoxi cristal de primera calidad, sellada a{" "}
+              taller lleva resina epoxi cristal de primera calidad, aplicada
+              artesanalmente para lograr ese{" "}
               <span className="font-medium" style={{ color: "#e8b84b" }}>
-                2 mm de espesor
+                acabado espejo brillante
               </span>{" "}
-              para lograr ese acabado espejo que no se consigue en una fábrica.
-              Mi objetivo es crecer con cada trabajo y que cada cliente reciba
-              algo único e irrepetible.
+              que no se consigue en una fábrica. Mi objetivo es crecer con cada
+              trabajo y que cada cliente reciba algo único e irrepetible.
             </p>
           </div>
 

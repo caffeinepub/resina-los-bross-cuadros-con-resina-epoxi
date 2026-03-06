@@ -27,7 +27,7 @@ export default function DataInitializer() {
             id: "mesa-rio-resina-nueva",
             title: "Mesa de Resina — Río Azul",
             description:
-              "Mesa a medida con madera maciza y río de resina epoxi cristal azul en el centro. Superficie ultra brillante de 2mm. Medidas personalizadas.",
+              "Mesa a medida con madera maciza y río de resina epoxi cristal azul en el centro. Superficie ultra brillante. Medidas personalizadas.",
             imageUrl:
               "/assets/generated/mesa-rio-resina-nueva.dim_1200x800.jpg",
             resinEffect: true,
@@ -119,7 +119,7 @@ export default function DataInitializer() {
             id: "cuadro-black-label-realista",
             title: "Cuadro Black Label — 45×60 cm",
             description:
-              "Cuadro decorativo 45×60 cm. Fragmentos de botella de Johnnie Walker Black Label encapsulados en resina epoxi cristal de 2mm. Marco negro premium.",
+              "Cuadro decorativo 45×60 cm. Fragmentos de botella de Johnnie Walker Black Label encapsulados en resina epoxi cristal. Marco negro premium.",
             imageUrl:
               "/assets/generated/cuadro-whisky-blacklabel-realista.dim_800x1000.jpg",
             resinEffect: true,
@@ -134,7 +134,7 @@ export default function DataInitializer() {
             id: "cuadro-fernet-branca-resina-epoxy",
             title: "Cuadro Fernet Branca",
             description:
-              "Cuadro decorativo con fragmentos de botella de Fernet Branca encapsulados en resina epoxi de 2mm. Marco de madera estético.",
+              "Cuadro decorativo con fragmentos de botella de Fernet Branca encapsulados en resina epoxi brillante. Marco de madera estético.",
             imageUrl:
               "/assets/generated/cuadro-fernet-branca-resina-epoxy.dim_800x600.jpg",
             resinEffect: true,
@@ -149,7 +149,7 @@ export default function DataInitializer() {
             id: "cuadro-grey-goose-resina-epoxy",
             title: "Cuadro Grey Goose",
             description:
-              "Fragmentos de botella de vodka Grey Goose encapsulados en resina epoxi de 2mm sobre marco de madera.",
+              "Fragmentos de botella de vodka Grey Goose encapsulados en resina epoxi sobre marco de madera.",
             imageUrl:
               "/assets/generated/cuadro-grey-goose-resina-epoxy.dim_800x600.jpg",
             resinEffect: true,
@@ -164,7 +164,7 @@ export default function DataInitializer() {
             id: "cuadro-macallan-resina-epoxy",
             title: "Cuadro Macallan",
             description:
-              "Fragmentos de botella de whisky Macallan encapsulados en resina epoxi de 2mm con marco de madera.",
+              "Fragmentos de botella de whisky Macallan encapsulados en resina epoxi brillante con marco de madera.",
             imageUrl:
               "/assets/generated/cuadro-macallan-resina-epoxy.dim_800x600.jpg",
             resinEffect: true,
@@ -179,7 +179,7 @@ export default function DataInitializer() {
             id: "cuadro-vodka-beluga-cristal",
             title: "Cuadro Vodka Beluga",
             description:
-              "Fragmentos de cristal de botella de vodka Beluga encapsulados en resina epoxi de 2mm. Diseño decorativo premium.",
+              "Fragmentos de cristal de botella de vodka Beluga encapsulados en resina epoxi brillante. Diseño decorativo premium.",
             imageUrl:
               "/assets/generated/cuadro-vodka-beluga-cristal.dim_800x600.jpg",
             resinEffect: true,
