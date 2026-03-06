@@ -130,66 +130,6 @@ export default function DataInitializer() {
             isVanGogh: false,
             isNew: true,
           },
-          {
-            id: "cuadro-fernet-branca-resina-epoxy",
-            title: "Cuadro Fernet Branca",
-            description:
-              "Cuadro decorativo con fragmentos de botella de Fernet Branca encapsulados en resina epoxi brillante. Marco de madera estético.",
-            imageUrl:
-              "/assets/generated/cuadro-fernet-branca-resina-epoxy.dim_800x600.jpg",
-            resinEffect: true,
-            resinThickness: 2n,
-            frameMaterial: "Madera",
-            isTriptych: false,
-            isFragmented: true,
-            isVanGogh: false,
-            isNew: false,
-          },
-          {
-            id: "cuadro-grey-goose-resina-epoxy",
-            title: "Cuadro Grey Goose",
-            description:
-              "Fragmentos de botella de vodka Grey Goose encapsulados en resina epoxi sobre marco de madera.",
-            imageUrl:
-              "/assets/generated/cuadro-grey-goose-resina-epoxy.dim_800x600.jpg",
-            resinEffect: true,
-            resinThickness: 2n,
-            frameMaterial: "Madera",
-            isTriptych: false,
-            isFragmented: true,
-            isVanGogh: false,
-            isNew: false,
-          },
-          {
-            id: "cuadro-macallan-resina-epoxy",
-            title: "Cuadro Macallan",
-            description:
-              "Fragmentos de botella de whisky Macallan encapsulados en resina epoxi brillante con marco de madera.",
-            imageUrl:
-              "/assets/generated/cuadro-macallan-resina-epoxy.dim_800x600.jpg",
-            resinEffect: true,
-            resinThickness: 2n,
-            frameMaterial: "Madera",
-            isTriptych: false,
-            isFragmented: true,
-            isVanGogh: false,
-            isNew: false,
-          },
-          {
-            id: "cuadro-vodka-beluga-cristal",
-            title: "Cuadro Vodka Beluga",
-            description:
-              "Fragmentos de cristal de botella de vodka Beluga encapsulados en resina epoxi brillante. Diseño decorativo premium.",
-            imageUrl:
-              "/assets/generated/cuadro-vodka-beluga-cristal.dim_800x600.jpg",
-            resinEffect: true,
-            resinThickness: 2n,
-            frameMaterial: "Madera",
-            isTriptych: false,
-            isFragmented: true,
-            isVanGogh: false,
-            isNew: false,
-          },
           // Trabajos reales del taller — piezas con conchas
           {
             id: "trabajo-real-conchas-circular",
