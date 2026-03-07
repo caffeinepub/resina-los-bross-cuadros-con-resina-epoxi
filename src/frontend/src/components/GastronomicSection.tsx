@@ -3,31 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, MessageCircle, Ruler, Utensils } from "lucide-react";
 import { useState } from "react";
 
-// Piezas del taller con encapsulado marino — pertenecen a esta sección
-const WORKSHOP_PIECES = [
-  {
-    id: "taller-conchas-circular",
-    title: "Pieza del Taller — Conchas en Resina",
-    description:
-      "Pieza circular con resina epoxi turquesa, encapsulando conchas, berberechos, pinzas de cangrejo y piedras del mar. Trabajo 100% artesanal.",
-    imageUrl: "/assets/generated/taller-pieza-circular-conchas.dim_800x600.jpg",
-  },
-  {
-    id: "taller-conchas-ovalado",
-    title: "Pieza del Taller — Composición Marina",
-    description:
-      "Pieza ovalada con resina epoxi brillante, conchas, pinzas de cangrejo, piedras y caracoles encapsulados artesanalmente.",
-    imageUrl: "/assets/generated/taller-pieza-ovalada-marina.dim_800x600.jpg",
-  },
-  {
-    id: "taller-vieiras-conchas",
-    title: "Pieza del Taller — Vieiras y Conchas",
-    description:
-      "Composición circular con vieiras, piedras de río y conchas encapsuladas en resina epoxi turquesa con acabado espejo.",
-    imageUrl: "/assets/generated/taller-pieza-vieiras-conchas.dim_800x600.jpg",
-  },
-];
-
 interface TableProduct {
   id: string;
   name: string;
@@ -37,6 +12,7 @@ interface TableProduct {
   thickness: string;
   weight: string;
   capacity: string;
+  price: string;
   features: string[];
   description: string;
 }
@@ -51,6 +27,7 @@ const tables: TableProduct[] = [
     thickness: "Superficie sellada con resina epoxi brillante",
     weight: "Aprox. 35 kg",
     capacity: "4 personas",
+    price: "Desde $707.000",
     features: [
       "Acabado brillante con resina epoxi cristal",
       "Conchas, ostras y pinzas de cangrejo encapsuladas",
@@ -72,6 +49,7 @@ const tables: TableProduct[] = [
     thickness: "Resina epoxi sellada + base de madera maciza",
     weight: "Aprox. 30 kg",
     capacity: "2–4 personas",
+    price: "Desde $633.000",
     features: [
       "Superficie sellada con resina epoxi azul-verde agua",
       "Acabado espejo ultra brillante y suave al tacto",
@@ -93,6 +71,7 @@ const tables: TableProduct[] = [
     thickness: "Acabado en resina epoxi + base de madera",
     weight: "Aprox. 28 kg",
     capacity: "2–4 personas / decorativa",
+    price: "Desde $707.000",
     features: [
       "Trabajo artesanal hecho a mano",
       "Conchas, sombreritos, caracoles y pinzas",
@@ -114,6 +93,7 @@ const tables: TableProduct[] = [
     thickness: "Capa de resina uniforme sellada sobre toda la superficie",
     weight: "Aprox. 40 kg",
     capacity: "4–6 personas",
+    price: "Desde $707.000",
     features: [
       "Toda la superficie sellada con resina epoxi cristal",
       "Acabado espejo ultra brillante en toda la capa",
@@ -135,6 +115,7 @@ const tables: TableProduct[] = [
     thickness: "Toda la tabla sellada con resina epoxi brillante",
     weight: "Aprox. 45 kg",
     capacity: "4 personas",
+    price: "Desde $707.000",
     features: [
       "Toda la superficie de madera cubierta con resina epoxi",
       "Conchas, almejas, sombreritos de mar encapsulados",
@@ -155,7 +136,7 @@ export default function GastronomicSection() {
 
   const whatsappMsg = (table: TableProduct) => {
     const text = encodeURIComponent(
-      `Hola! Me interesa la "${table.name}" (${table.dimensions}) para mi local gastronómico. ¿Pueden darme más información y precio?`,
+      `Hola! Me interesa la "${table.name}" (${table.dimensions}) — ${table.price}. ¿Pueden darme más información?`,
     );
     return `https://wa.me/542974189779?text=${text}`;
   };
@@ -261,6 +242,15 @@ export default function GastronomicSection() {
                   <span className="px-3 py-1 rounded-full bg-amber-600/90 text-white text-xs font-semibold">
                     {table.shape}
                   </span>
+                </div>
+                <div
+                  className="absolute top-3 right-3 px-3 py-1.5 rounded-full text-xs font-bold shadow-lg"
+                  style={{
+                    background: "linear-gradient(135deg, #c8922a, #e8b84b)",
+                    color: "#1a0f00",
+                  }}
+                >
+                  {table.price}
                 </div>
               </div>
 
@@ -371,62 +361,6 @@ export default function GastronomicSection() {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Workshop pieces — inspiración artesanal marina */}
-        <div className="mb-12">
-          <div className="text-center mb-8">
-            <h3
-              className="text-2xl font-bold mb-2"
-              style={{ color: "#f0d89a" }}
-            >
-              Trabajos del Taller
-            </h3>
-            <p
-              className="text-sm max-w-xl mx-auto"
-              style={{ color: "rgba(210,180,130,0.72)" }}
-            >
-              Piezas decorativas con elementos marinos encapsulados en resina
-              epoxi — ideales como inspiración para el diseño de tu local.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {WORKSHOP_PIECES.map((piece, idx) => (
-              <div
-                key={piece.id}
-                data-ocid={`gastro.workshop.item.${idx + 1}`}
-                className="rounded-xl overflow-hidden"
-                style={{
-                  background: "rgba(20,12,2,0.85)",
-                  border: "1px solid rgba(200,146,42,0.18)",
-                  boxShadow: "0 4px 24px rgba(0,0,0,0.4)",
-                }}
-              >
-                <div className="h-52 overflow-hidden bg-black/40">
-                  <img
-                    src={piece.imageUrl}
-                    alt={piece.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-                <div className="p-4">
-                  <h4
-                    className="text-sm font-bold mb-1"
-                    style={{ color: "#f0d89a" }}
-                  >
-                    {piece.title}
-                  </h4>
-                  <p
-                    className="text-xs leading-relaxed"
-                    style={{ color: "rgba(210,180,130,0.75)" }}
-                  >
-                    {piece.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Bottom CTA */}

@@ -6,7 +6,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Gem, Layers, MessageCircle, Settings2, Wine } from "lucide-react";
+import {
+  Gem,
+  Layers,
+  MessageCircle,
+  Settings2,
+  Sparkles,
+  Wine,
+} from "lucide-react";
 
 export default function ProductsSection() {
   const products = [
@@ -16,9 +23,11 @@ export default function ProductsSection() {
       image:
         "/assets/generated/mesa-comedor-rio-resina-especialidad.dim_1200x800.jpg",
       title: "Mesa de Comedor — Río de Resina",
-      price: "Desde $415.000",
+      price: "Desde $633.000",
+      marketRef: "Diseño equivalente importado: desde $900.000",
+      uniqueTag: "Pieza única — ningún diseño se repite",
       description:
-        "Mesa de madera maciza live-edge con un río de resina epoxi turquesa cristal fluyendo por el centro. Profundidad real, brillo tipo espejo y colores que brillan con la luz. Cada pieza es irrepetible.",
+        "Mesa de madera maciza live-edge con un río de resina epoxi turquesa cristal fluyendo por el centro. Profundidad real, brillo tipo espejo y colores que brillan con la luz.",
       features: [
         "Madera maciza con bordes naturales",
         "Río de resina epoxi cristal multicapa",
@@ -31,7 +40,9 @@ export default function ProductsSection() {
       icon: Settings2,
       image: "/assets/generated/mesa-ratona-rio-turquesa-nueva.dim_800x600.jpg",
       title: "Mesa Ratona — Río Turquesa",
-      price: "Desde $195.000",
+      price: "Desde $399.000",
+      marketRef: "Mesas ratonas de diseño en el mercado: desde $550.000",
+      uniqueTag: "Pieza única — ningún diseño se repite",
       description:
         "Mesa ratona de madera maciza live-edge con río de resina epoxi turquesa cristal en el centro. Acabado ultra brillante con profundidad real. Patas hairpin negras.",
       features: [
@@ -46,7 +57,9 @@ export default function ProductsSection() {
       image:
         "/assets/generated/mesa-ratona-galaxia-azul-editada.dim_800x600.jpg",
       title: "Mesa Ratona — Galaxia Azul",
-      price: "Desde $275.000",
+      price: "Desde $399.000",
+      marketRef: "Mesas ratonas de diseño en el mercado: desde $550.000",
+      uniqueTag: "Pieza única — ningún diseño se repite",
       description:
         "Mesa ratona redonda con diseño galaxia en azul, violeta y blanco con destellos de brillo. Resina epoxi con efecto nebulosa, acabado cristal espejo.",
       features: [
@@ -61,7 +74,9 @@ export default function ProductsSection() {
       image:
         "/assets/generated/mesa-ratona-redonda-oceano-editada.dim_800x600.jpg",
       title: "Mesa Ratona — Océano Topográfico",
-      price: "Desde $195.000",
+      price: "Desde $399.000",
+      marketRef: "Mesas ratonas de diseño en el mercado: desde $550.000",
+      uniqueTag: "Pieza única — ningún diseño se repite",
       description:
         "Mesa ratona circular con diseño de mapa topográfico oceánico en tonos turquesa, verde y arena. Resina epoxi con profundidad y brillo ultra espejo. Patas hairpin negras.",
       features: [
@@ -77,7 +92,9 @@ export default function ProductsSection() {
       image:
         "/assets/generated/cuadro-blue-label-ultra-realista-45x60.dim_800x1067.jpg",
       title: "Cuadro Blue Label — 45×60 cm",
-      price: "Desde $125.000",
+      price: "Desde $239.000",
+      marketRef: null,
+      uniqueTag: "Pieza única — ningún diseño se repite",
       description:
         "Cuadro decorativo exclusivo 45×60 cm con fragmentos de botella de whisky Blue Label rota, artísticamente encapsulados en resina epoxi con acabado brillante y relieve 3D. Marco negro elegante.",
       features: [
@@ -93,7 +110,9 @@ export default function ProductsSection() {
       image:
         "/assets/generated/cuadro-black-label-ultra-realista-45x60.dim_800x1067.jpg",
       title: "Cuadro Black Label — 45×60 cm",
-      price: "Desde $125.000",
+      price: "Desde $239.000",
+      marketRef: null,
+      uniqueTag: "Pieza única — ningún diseño se repite",
       description:
         "Cuadro decorativo 45×60 cm con fragmentos de botella de whisky Black Label rota, sellados con resina epoxi cristal de acabado brillante. Pieza premium con marco negro.",
       features: [
@@ -110,6 +129,8 @@ export default function ProductsSection() {
       image: "/assets/generated/mesa-resina-rio.dim_1200x800.jpg",
       title: "Diseños Personalizados",
       price: "Consultar",
+      marketRef: null,
+      uniqueTag: null,
       description:
         "Creamos cualquier diseño con resina epoxi adaptado a tus gustos, medidas y espacio. Asesoramiento personalizado incluido. Distribuimos a todo el país.",
       features: [
@@ -260,6 +281,37 @@ export default function ProductsSection() {
                       </li>
                     ))}
                   </ul>
+
+                  {/* Market comparison */}
+                  {product.marketRef && (
+                    <div
+                      className="mb-3 px-3 py-2 rounded-lg text-xs font-medium"
+                      style={{
+                        background: "rgba(200,146,42,0.08)",
+                        color: "rgba(230,200,140,0.80)",
+                        borderLeft: "2px solid rgba(200,146,42,0.45)",
+                      }}
+                    >
+                      {product.marketRef}
+                    </div>
+                  )}
+
+                  {/* Unique tag */}
+                  {product.uniqueTag && (
+                    <div className="flex items-center gap-1.5 mb-4">
+                      <Sparkles
+                        className="h-3 w-3 shrink-0"
+                        style={{ color: "#e8b84b" }}
+                      />
+                      <span
+                        className="text-xs font-semibold italic"
+                        style={{ color: "rgba(232,184,75,0.75)" }}
+                      >
+                        {product.uniqueTag}
+                      </span>
+                    </div>
+                  )}
+
                   <Button
                     asChild
                     size="sm"

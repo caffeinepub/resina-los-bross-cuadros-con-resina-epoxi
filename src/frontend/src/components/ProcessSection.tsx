@@ -11,30 +11,30 @@ const steps: Step[] = [
   {
     step: 1,
     icon: MessageCircle,
-    title: "Consulta",
+    title: "Consulta sin compromiso",
     description:
-      "Nos contás tu idea, medidas y espacio. Te asesoramos sin compromiso y te mostramos referencias de trabajos anteriores.",
+      "Me contás tu idea, medidas y espacio. Te asesoro sobre materiales, colores y posibilidades — sin costo y sin apuro. A veces en una sola charla ya tenemos todo claro.",
   },
   {
     step: 2,
     icon: Palette,
-    title: "Diseño",
+    title: "Diseño personalizado",
     description:
-      "Diseñamos juntos el acabado, colores y materiales. Elegís tonos, texturas y elementos a encapsular — todo a tu gusto.",
+      "Elegís los tonos, texturas y elementos a encapsular. Trabajamos el diseño juntos hasta que estés conforme. No arranco a producir hasta que el diseño esté 100% aprobado.",
   },
   {
     step: 3,
     icon: Hammer,
-    title: "Elaboración",
+    title: "Elaboración artesanal — 24 a 36 hs",
     description:
-      "Fabrico tu pieza a mano en mi taller en Córdoba con resina epoxi cristal de alta calidad. Producción 100% artesanal.",
+      "Preparo la madera, armo el molde, vacío la resina en capas y espero el curado completo (36 a 48 hs sin apresurar). Luego lijo desde grano 80 hasta 2000 y pulo hasta espejo. Cero atajos.",
   },
   {
     step: 4,
     icon: Truck,
-    title: "Entrega",
+    title: "Entrega a todo el país",
     description:
-      "Empaqueto con cuidado y envío a cualquier provincia del país. Tu obra llega protegida y lista para lucir.",
+      "Empaqueto con protección reforzada y envío por transporte de confianza a cualquier provincia de Argentina. Tu pieza llega lista para lucir — solo la ponés en su lugar.",
   },
 ];
 
