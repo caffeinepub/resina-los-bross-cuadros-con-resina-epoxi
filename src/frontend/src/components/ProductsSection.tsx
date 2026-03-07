@@ -10,6 +10,7 @@ import { Gem, Layers, MessageCircle, Settings2, Wine } from "lucide-react";
 
 export default function ProductsSection() {
   const products = [
+    // ── MESAS (productos principales) ────────────────────────────────────────
     {
       icon: Layers,
       image:
@@ -56,6 +57,22 @@ export default function ProductsSection() {
       isPortrait: false,
     },
     {
+      icon: Settings2,
+      image:
+        "/assets/generated/mesa-ratona-redonda-oceano-editada.dim_800x600.jpg",
+      title: "Mesa Ratona — Océano Topográfico",
+      price: "Desde $195.000",
+      description:
+        "Mesa ratona circular con diseño de mapa topográfico oceánico en tonos turquesa, verde y arena. Resina epoxi con profundidad y brillo ultra espejo. Patas hairpin negras.",
+      features: [
+        "Diseño topográfico oceánico",
+        "Tonos turquesa, verde y arena",
+        "Acabado cristal espejo",
+      ],
+      isPortrait: false,
+    },
+    // ── CUADROS (productos decorativos) ──────────────────────────────────────
+    {
       icon: Gem,
       image:
         "/assets/generated/cuadro-blue-label-ultra-realista-45x60.dim_800x1067.jpg",
@@ -87,6 +104,7 @@ export default function ProductsSection() {
       ],
       isPortrait: true,
     },
+    // ── DISEÑOS PERSONALIZADOS ────────────────────────────────────────────────
     {
       icon: Settings2,
       image: "/assets/generated/mesa-resina-rio.dim_1200x800.jpg",

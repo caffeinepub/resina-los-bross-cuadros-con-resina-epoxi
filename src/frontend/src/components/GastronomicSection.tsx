@@ -3,6 +3,31 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, MessageCircle, Ruler, Utensils } from "lucide-react";
 import { useState } from "react";
 
+// Piezas del taller con encapsulado marino — pertenecen a esta sección
+const WORKSHOP_PIECES = [
+  {
+    id: "taller-conchas-circular",
+    title: "Pieza del Taller — Conchas en Resina",
+    description:
+      "Pieza circular con resina epoxi turquesa, encapsulando conchas, berberechos, pinzas de cangrejo y piedras del mar. Trabajo 100% artesanal.",
+    imageUrl: "/assets/generated/taller-pieza-circular-conchas.dim_800x600.jpg",
+  },
+  {
+    id: "taller-conchas-ovalado",
+    title: "Pieza del Taller — Composición Marina",
+    description:
+      "Pieza ovalada con resina epoxi brillante, conchas, pinzas de cangrejo, piedras y caracoles encapsulados artesanalmente.",
+    imageUrl: "/assets/generated/taller-pieza-ovalada-marina.dim_800x600.jpg",
+  },
+  {
+    id: "taller-vieiras-conchas",
+    title: "Pieza del Taller — Vieiras y Conchas",
+    description:
+      "Composición circular con vieiras, piedras de río y conchas encapsuladas en resina epoxi turquesa con acabado espejo.",
+    imageUrl: "/assets/generated/taller-pieza-vieiras-conchas.dim_800x600.jpg",
+  },
+];
+
 interface TableProduct {
   id: string;
   name: string;
@@ -346,6 +371,62 @@ export default function GastronomicSection() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Workshop pieces — inspiración artesanal marina */}
+        <div className="mb-12">
+          <div className="text-center mb-8">
+            <h3
+              className="text-2xl font-bold mb-2"
+              style={{ color: "#f0d89a" }}
+            >
+              Trabajos del Taller
+            </h3>
+            <p
+              className="text-sm max-w-xl mx-auto"
+              style={{ color: "rgba(210,180,130,0.72)" }}
+            >
+              Piezas decorativas con elementos marinos encapsulados en resina
+              epoxi — ideales como inspiración para el diseño de tu local.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {WORKSHOP_PIECES.map((piece, idx) => (
+              <div
+                key={piece.id}
+                data-ocid={`gastro.workshop.item.${idx + 1}`}
+                className="rounded-xl overflow-hidden"
+                style={{
+                  background: "rgba(20,12,2,0.85)",
+                  border: "1px solid rgba(200,146,42,0.18)",
+                  boxShadow: "0 4px 24px rgba(0,0,0,0.4)",
+                }}
+              >
+                <div className="h-52 overflow-hidden bg-black/40">
+                  <img
+                    src={piece.imageUrl}
+                    alt={piece.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </div>
+                <div className="p-4">
+                  <h4
+                    className="text-sm font-bold mb-1"
+                    style={{ color: "#f0d89a" }}
+                  >
+                    {piece.title}
+                  </h4>
+                  <p
+                    className="text-xs leading-relaxed"
+                    style={{ color: "rgba(210,180,130,0.75)" }}
+                  >
+                    {piece.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Bottom CTA */}
